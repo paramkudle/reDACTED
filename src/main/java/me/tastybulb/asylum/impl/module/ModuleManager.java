@@ -35,6 +35,8 @@ public class ModuleManager {
 		
 		// Combat
 		modules.add(new KillAura());
+		modules.add(new AutoCrystal());
+		modules.add(new AutoCope());
 		
 		// Exploits
 		modules.add(new Timer());
