@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "me/tastybulb/asylum/api/mixin/mixins/MixinGuiMainMenu": {
+      "drawScreen": "Lnet/minecraft/client/gui/GuiMainMenu;func_73863_a(IIF)V"
+    },
+    "me/tastybulb/asylum/api/mixin/mixins/MixinEntityPlayerSP": {
+      "onUpdate": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70071_h_()V"
+    }
+  },
+  "data": {
+    "notch": {
+      "me/tastybulb/asylum/api/mixin/mixins/MixinGuiMainMenu": {
+        "drawScreen": "Lblr;a(IIF)V"
+      },
+      "me/tastybulb/asylum/api/mixin/mixins/MixinEntityPlayerSP": {
+        "onUpdate": "Lbud;B_()V"
+      }
+    },
+    "searge": {
+      "me/tastybulb/asylum/api/mixin/mixins/MixinGuiMainMenu": {
+        "drawScreen": "Lnet/minecraft/client/gui/GuiMainMenu;func_73863_a(IIF)V"
+      },
+      "me/tastybulb/asylum/api/mixin/mixins/MixinEntityPlayerSP": {
+        "onUpdate": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70071_h_()V"
+      }
+    }
+  }
+}
