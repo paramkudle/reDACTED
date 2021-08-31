@@ -36,7 +36,7 @@ public class Asylum {
 	public static final String clientProxyClass = "me.tastybulb.asylum.api.proxy.ClientProxy";
 	public static final String commonProxyClass = "me.tastybulb.asylum.api.proxy.CommonProxy";
 	public static ClickGui clickGui;
-	public static final JColor ASYLUM_COLOR = new JColor(121, 193, 255, 100);
+	public static final JColor ASYLUM_COLOR = new JColor(137, 72, 255, 100);
 
 	public static final Logger log = LogManager.getLogger("asylum");
 	public static final EventBus EVENT_BUS = new EventManager();

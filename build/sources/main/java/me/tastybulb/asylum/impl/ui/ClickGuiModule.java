@@ -36,7 +36,7 @@ public class ClickGuiModule extends Module {
 
     public ClickGuiModule() {
         super("clickGui", "classic hud", Keyboard.KEY_P, Category.CLIENT);
-        this.addSettings(blur, scrollMode, scrolls, description, animationSpeed, fontColor, enabledColor, backgroundColor, settingBackgroundColor, outlineColor);
+        this.addSettings(blur, scrollMode, scrolls, description, animationSpeed);
         INSTANCE = this;
     }
     private ResourceLocation shader = new ResourceLocation("minecraft", "shaders/post/blur" + ".json");
