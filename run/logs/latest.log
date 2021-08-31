@@ -1,131 +1,140 @@
-[21:23:32] [main/INFO] [GradleStart]: Extra: []
-[21:23:32] [main/INFO] [GradleStart]: Found and added coremod: me.tastybulb.asylum.impl.Asylum
-[21:23:32] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/dev_k/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[21:23:32] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:23:32] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:23:32] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[21:23:32] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:23:32] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
-[21:23:32] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_302, running on Windows 10:amd64:10.0, installed at C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\jre
-[21:23:32] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[21:23:32] [main/ERROR] [FML]: Full: C:\Users\dev_k\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
-[21:23:32] [main/ERROR] [FML]: Trimmed: c:/users/dev_k/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
-[21:23:32] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[21:23:32] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
-[21:23:33] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
-[21:23:33] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
-[21:23:33] [main/INFO] [FML]: Found a command line coremod : me.tastybulb.asylum.impl.Asylum
-[21:23:33] [main/WARN] [FML]: The coremod me.tastybulb.asylum.impl.Asylum does not have a MCVersion annotation, it may cause issues with this version of Minecraft
-[21:23:33] [main/INFO] [FML]: Ignoring missing certificate for coremod Asylum (me.tastybulb.asylum.impl.Asylum), as this is probably a dev workspace
-[21:23:33] [main/ERROR] [FML]: Coremod me.tastybulb.asylum.impl.Asylum: The plugin java.lang.ClassCastException: me.tastybulb.asylum.impl.Asylum cannot be cast to net.minecraftforge.fml.relauncher.IFMLLoadingPlugin is not an implementor of IFMLLoadingPlugin
-[21:23:33] [main/INFO] [FML]: Searching C:\Users\dev_k\Asylum\run\.\mods for mods
-[21:23:33] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[21:23:33] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[21:23:33] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[21:23:33] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[21:23:33] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[21:23:33] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[21:23:33] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[21:23:33] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[21:23:33] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[21:23:33] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[21:23:33] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[21:23:33] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[21:23:34] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[21:23:34] [main/INFO] [GradleStart]: Remapping AccessTransformer rules...
-[21:23:34] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[21:23:34] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[21:23:34] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[21:23:35] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Player484
-[21:23:38] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
-[21:24:07] [main/INFO] [FML]: -- System Details --
+[10:46:36] [main/INFO] [GradleStart]: Extra: []
+[10:46:36] [main/INFO] [GradleStart]: Found and added coremod: me.tastybulb.asylum.impl.Asylum
+[10:46:36] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/dev_k/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[10:46:36] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[10:46:36] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[10:46:36] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[10:46:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[10:46:36] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[10:46:36] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_302, running on Windows 10:amd64:10.0, installed at C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\jre
+[10:46:36] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[10:46:36] [main/ERROR] [FML]: Full: C:\Users\dev_k\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[10:46:36] [main/ERROR] [FML]: Trimmed: c:/users/dev_k/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[10:46:36] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[10:46:36] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[10:46:37] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[10:46:37] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[10:46:37] [main/INFO] [FML]: Found a command line coremod : me.tastybulb.asylum.impl.Asylum
+[10:46:37] [main/WARN] [FML]: The coremod me.tastybulb.asylum.impl.Asylum does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[10:46:37] [main/INFO] [FML]: Ignoring missing certificate for coremod Asylum (me.tastybulb.asylum.impl.Asylum), as this is probably a dev workspace
+[10:46:37] [main/ERROR] [FML]: Coremod me.tastybulb.asylum.impl.Asylum: The plugin java.lang.ClassCastException: me.tastybulb.asylum.impl.Asylum cannot be cast to net.minecraftforge.fml.relauncher.IFMLLoadingPlugin is not an implementor of IFMLLoadingPlugin
+[10:46:37] [main/INFO] [FML]: Searching C:\Users\dev_k\Asylum\run\.\mods for mods
+[10:46:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[10:46:37] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[10:46:37] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[10:46:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[10:46:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[10:46:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[10:46:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[10:46:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[10:46:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[10:46:38] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[10:46:38] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[10:46:38] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[10:46:38] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[10:46:38] [main/INFO] [GradleStart]: Remapping AccessTransformer rules...
+[10:46:38] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[10:46:38] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[10:46:38] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[10:46:39] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Player468
+[10:46:46] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[10:46:46] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[10:46:59] [main/INFO] [FML]: -- System Details --
 Details:
 	Minecraft Version: 1.12.2
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_302, Temurin
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
-	Memory: 49281392 bytes (46 MB) / 385875968 bytes (368 MB) up to 1757937664 bytes (1676 MB)
+	Memory: 71535624 bytes (68 MB) / 397410304 bytes (379 MB) up to 1757937664 bytes (1676 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
 	Loaded coremods (and transformers): 
 	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 471.68' Renderer: 'NVIDIA GeForce GTX 1650/PCIe/SSE2'
-[21:24:08] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
-[21:24:08] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
-[21:24:09] [main/INFO] [FML]: Replaced 1036 ore ingredients
-[21:24:15] [main/INFO] [FML]: Searching C:\Users\dev_k\Asylum\run\.\mods for mods
-[21:24:16] [Thread-3/INFO] [FML]: Using alternative sync timing : 200 frames of Display.update took 3331850400 nanos
-[21:24:30] [main/INFO] [FML]: Forge Mod Loader has identified 5 mods to load
-[21:24:31] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, asylum] at CLIENT
-[21:24:31] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, asylum] at SERVER
-[21:24:33] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Asylum
-[21:24:34] [main/INFO] [FML]: Processing ObjectHolder annotations
-[21:24:34] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
-[21:24:34] [main/INFO] [FML]: Identifying ItemStackHolder annotations
-[21:24:34] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
-[21:24:34] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
-[21:24:34] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[21:24:34] [main/INFO] [FML]: Applying holder lookups
-[21:24:34] [main/INFO] [FML]: Holder lookups applied
-[21:24:34] [main/INFO] [FML]: Applying holder lookups
-[21:24:34] [main/INFO] [FML]: Holder lookups applied
-[21:24:34] [main/INFO] [FML]: Applying holder lookups
-[21:24:34] [main/INFO] [FML]: Holder lookups applied
-[21:24:34] [main/INFO] [FML]: Applying holder lookups
-[21:24:34] [main/INFO] [FML]: Holder lookups applied
-[21:24:34] [main/INFO] [FML]: Injecting itemstacks
-[21:24:34] [main/INFO] [FML]: Itemstack injection complete
-[21:24:36] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
-[21:24:37] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
-[21:24:37] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[21:24:40] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
-[21:24:40] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
-[21:24:41] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2855
-[21:24:41] [main/INFO] [FML]: Max texture size: 16384
-[21:24:42] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
-[21:24:44] [main/INFO] [FML]: Applying holder lookups
-[21:24:44] [main/INFO] [FML]: Holder lookups applied
-[21:24:44] [main/INFO] [asylum]: Asylum Event System Initialized!
-[21:24:44] [main/INFO] [asylum]: Forge Event System Initialized!
-[21:24:50] [main/INFO] [asylum]: Custom Font Initialized!
-[21:24:50] [main/INFO] [asylum]: Setting Manager Initialized!
-[21:24:50] [main/INFO] [asylum]: Module Manager Initialized!
-[21:24:51] [main/INFO] [asylum]: Config Initialized!
-[21:24:51] [main/INFO] [asylum]: Asylum Finished Initialization
-[21:24:51] [main/INFO] [FML]: Injecting itemstacks
-[21:24:51] [main/INFO] [FML]: Itemstack injection complete
-[21:24:51] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 5 mods
-[21:24:51] [main/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
-[21:24:52] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
-[21:25:01] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
-[21:25:01] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
-[21:25:01] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
-[21:25:01] [Server thread/INFO] [FML]: Applying holder lookups
-[21:25:01] [Server thread/INFO] [FML]: Holder lookups applied
-[21:25:02] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@168fd836)
-[21:25:03] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
-[21:25:04] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@168fd836)
-[21:25:04] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@168fd836)
-[21:25:04] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
-[21:25:05] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 11%
-[21:25:06] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 32%
-[21:25:07] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 51%
-[21:25:08] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 68%
-[21:25:09] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 91%
-[21:25:11] [Server thread/INFO] [FML]: Unloading dimension -1
-[21:25:11] [Server thread/INFO] [FML]: Unloading dimension 1
-[21:25:11] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
-[21:25:15] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
-[21:25:15] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
-[21:25:15] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42,asylum@2.1
-[21:25:15] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
-[21:25:15] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
-[21:25:15] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player484[local:E:93abcd7d] logged in with entity id 1025 at (-72.5, 67.0, 246.5)
-[21:25:15] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player484 joined the game
-[21:25:19] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 2840ms behind, skipping 56 tick(s)
-[21:25:24] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[21:25:25] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[21:27:26] [main/WARN] [net.minecraft.client.renderer.texture.TextureManager]: Failed to load texture: asylum:asylum/logo.png
+[10:46:59] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
+[10:46:59] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[10:47:00] [main/INFO] [FML]: Replaced 1036 ore ingredients
+[10:47:00] [main/INFO] [FML]: Searching C:\Users\dev_k\Asylum\run\.\mods for mods
+[10:47:01] [main/INFO] [FML]: Forge Mod Loader has identified 5 mods to load
+[10:47:02] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, asylum] at CLIENT
+[10:47:02] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, asylum] at SERVER
+[10:47:02] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 160596100 nanos
+[10:47:02] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Asylum
+[10:47:02] [main/INFO] [FML]: Processing ObjectHolder annotations
+[10:47:02] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
+[10:47:02] [main/INFO] [FML]: Identifying ItemStackHolder annotations
+[10:47:02] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
+[10:47:02] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
+[10:47:02] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[10:47:02] [main/INFO] [FML]: Applying holder lookups
+[10:47:02] [main/INFO] [FML]: Holder lookups applied
+[10:47:02] [main/INFO] [FML]: Applying holder lookups
+[10:47:02] [main/INFO] [FML]: Holder lookups applied
+[10:47:02] [main/INFO] [FML]: Applying holder lookups
+[10:47:02] [main/INFO] [FML]: Holder lookups applied
+[10:47:02] [main/INFO] [FML]: Applying holder lookups
+[10:47:02] [main/INFO] [FML]: Holder lookups applied
+[10:47:02] [main/INFO] [FML]: Injecting itemstacks
+[10:47:02] [main/INFO] [FML]: Itemstack injection complete
+[10:47:05] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[10:47:05] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[10:47:05] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[10:47:06] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[10:47:06] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[10:47:06] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2855
+[10:47:09] [main/INFO] [FML]: Max texture size: 16384
+[10:47:09] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
+[10:47:12] [main/INFO] [FML]: Applying holder lookups
+[10:47:12] [main/INFO] [FML]: Holder lookups applied
+[10:47:12] [main/INFO] [asylum]: Asylum Event System Initialized!
+[10:47:12] [main/INFO] [asylum]: Forge Event System Initialized!
+[10:47:18] [main/INFO] [asylum]: Custom Font Initialized!
+[10:47:18] [main/INFO] [asylum]: Setting Manager Initialized!
+[10:47:18] [main/INFO] [asylum]: Command Manager Initialized!
+[10:47:18] [main/INFO] [asylum]: Module Manager Initialized!
+[10:47:18] [main/INFO] [asylum]: Config Initialized!
+[10:47:18] [main/INFO] [asylum]: Asylum Finished Initialization
+[10:47:18] [main/INFO] [FML]: Injecting itemstacks
+[10:47:18] [main/INFO] [FML]: Itemstack injection complete
+[10:47:19] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 5 mods
+[10:47:19] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[10:47:19] [main/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[10:47:20] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
+[10:47:33] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[10:47:33] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[10:47:33] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[10:47:33] [Server thread/INFO] [FML]: Applying holder lookups
+[10:47:33] [Server thread/INFO] [FML]: Holder lookups applied
+[10:47:34] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@3134f8c9)
+[10:47:35] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[10:47:35] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@3134f8c9)
+[10:47:35] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@3134f8c9)
+[10:47:35] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[10:47:36] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 0%
+[10:47:37] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 5%
+[10:47:38] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 39%
+[10:47:39] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 69%
+[10:47:41] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 98%
+[10:47:46] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 4643ms behind, skipping 92 tick(s)
+[10:47:47] [Server thread/INFO] [FML]: Unloading dimension -1
+[10:47:47] [Server thread/INFO] [FML]: Unloading dimension 1
+[10:47:47] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
+[10:47:53] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[10:47:53] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[10:47:53] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42,asylum@2.1
+[10:47:53] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[10:47:53] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[10:47:53] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player468[local:E:089f12df] logged in with entity id 2 at (-242.9848698110515, 67.62611552405195, 1037.8248945134956)
+[10:47:53] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player468 joined the game
+[10:47:57] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[10:47:59] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[10:48:19] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[10:48:19] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[10:48:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] -------------------
+[10:48:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] Asylum 2.1!
+[10:48:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] vanish - vanish ridden entities. [ vanish ]
+[10:48:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] -------------------
+[10:49:08] [main/WARN] [net.minecraft.client.renderer.texture.TextureManager]: Failed to load texture: asylum:asylum/logo.png
 java.io.FileNotFoundException: asylum:asylum/logo.png
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:69) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:34) ~[SimpleTexture.class:?]
@@ -141,9 +150,9 @@ java.io.FileNotFoundException: asylum:asylum/logo.png
 	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:1.8.0_302]
 	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:1.8.0_302]
 	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485) [?:1.8.0_302]
-	at me.tastybulb.asylum.impl.module.ModuleManager.onRender(ModuleManager.java:60) [ModuleManager.class:?]
+	at me.tastybulb.asylum.impl.module.ModuleManager.onRender(ModuleManager.java:59) [ModuleManager.class:?]
 	at me.tastybulb.asylum.api.event.EventProcessor.onRender(EventProcessor.java:65) [EventProcessor.class:?]
-	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_16_EventProcessor_onRender_Post.invoke(.dynamic) [?:?]
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_13_EventProcessor_onRender_Post.invoke(.dynamic) [?:?]
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90) [ASMEventHandler.class:?]
 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182) [EventBus.class:?]
 	at net.minecraftforge.client.GuiIngameForge.post(GuiIngameForge.java:914) [GuiIngameForge.class:?]
@@ -165,18 +174,29 @@ java.io.FileNotFoundException: asylum:asylum/logo.png
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
 	at GradleStart.main(GradleStart.java:25) [start/:?]
-[21:28:12] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 9 advancements
-[21:28:18] [main/WARN] [net.minecraft.client.network.NetHandlerPlayClient]: Received passengers for unknown entity
-[21:28:50] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 16 advancements
-[21:28:55] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[21:28:55] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[21:30:37] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: [Player484: Set the time to 13000]
-[21:30:37] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Set the time to 13000
-[21:33:13] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 16 advancements
-[21:33:47] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 16 advancements
-[21:34:46] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 30172ms behind, skipping 603 tick(s)
-[21:35:51] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 32510ms behind, skipping 650 tick(s)
-[21:36:52] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[21:36:52] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[21:36:58] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[21:36:58] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[10:49:42] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player468 has made the advancement [Best Friends Forever]
+[10:49:42] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Player468 has made the advancement [Best Friends Forever]
+[10:49:42] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 2 advancements
+[10:49:50] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] command does not exist, use ,help for help.
+[10:49:57] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] command does not exist, use ,help for help.
+[10:49:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] -------------------
+[10:49:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] Asylum 2.1!
+[10:49:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] vanish - vanish ridden entities. [ vanish ]
+[10:49:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] -------------------
+[10:50:01] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] -------------------
+[10:50:01] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] Asylum 2.1!
+[10:50:01] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] vanish - vanish ridden entities. [ vanish ]
+[10:50:01] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] -------------------
+[10:50:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Asylum] command does not exist, use ,help for help.
+[10:50:38] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[10:50:38] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[10:50:39] [main/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[10:50:39] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[10:50:39] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[10:50:39] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[10:50:39] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[10:50:39] [Server thread/INFO] [FML]: Unloading dimension 0
+[10:50:39] [Server thread/INFO] [FML]: Applying holder lookups
+[10:50:39] [Server thread/INFO] [FML]: Holder lookups applied
+[10:50:39] [main/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[10:50:40] [main/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com

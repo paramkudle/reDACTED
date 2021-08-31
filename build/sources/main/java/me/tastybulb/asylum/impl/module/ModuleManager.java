@@ -45,7 +45,6 @@ public class ModuleManager {
 		modules.add(new Strafe());
 		
 		// Client
-		//modules.add(new ClickGUI());
 		modules.add(new ClickGuiModule());
 		modules.add(new HudEditor());
 		modules.add(new ClientFont());

@@ -1,6 +1,6 @@
 MOD:Velocity:false:0
 MOD:FullBright:true:22
-MOD:KillAura:true:21
+MOD:KillAura:false:21
 MOD:Timer:false:0
 MOD:Sprint:false:19
 MOD:Sneak:true:0

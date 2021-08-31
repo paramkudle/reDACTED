@@ -1,5 +1,7 @@
 package me.tastybulb.asylum.impl;
 
+import me.tastybulb.asylum.api.command.Command;
+import me.tastybulb.asylum.api.command.CommandManager;
 import me.tastybulb.asylum.api.config.SaveLoadConfig;
 import me.tastybulb.asylum.api.event.EventProcessor;
 import me.tastybulb.asylum.api.utils.JColor;
@@ -43,7 +45,7 @@ public class Asylum {
 	public static SettingManager settingManager;
 	public static SaveLoadConfig saveLoadConfig;
 	public static CustomFontRenderer customFontRenderer;
-	//public CustomFontRenderer customFontRenderer;
+	public static CommandManager commandManager;
 	public EventProcessor eventProcessor;
 	
 	@Instance 
@@ -79,6 +81,10 @@ public class Asylum {
 		
 		settingManager = new SettingManager();
 		log.info("Setting Manager Initialized!");
+
+		commandManager = new CommandManager();
+		//CommandManager.init();
+		log.info("Command Manager Initialized!");
 		
 		MinecraftForge.EVENT_BUS.register(new ModuleManager()); // this is necessary for key input to work.
 		moduleManager = new ModuleManager();
