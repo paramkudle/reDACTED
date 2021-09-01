@@ -8,7 +8,6 @@ import me.tastybulb.asylum.impl.module.modules.exploits.*;
 import me.tastybulb.asylum.impl.Asylum;
 //import me.tastybulb.asylum.impl.module.modules.Client.ClientFont;
 import me.tastybulb.asylum.impl.module.modules.movement.*;
-import me.tastybulb.asylum.impl.module.modules.player.*;
 import me.tastybulb.asylum.impl.module.modules.render.*;
 import me.tastybulb.asylum.impl.module.modules.Client.*;
 import me.tastybulb.asylum.impl.ui.ClickGuiModule;
@@ -35,6 +34,10 @@ public class ModuleManager {
 		
 		// Combat
 		modules.add(new KillAura());
+		modules.add(new AutoCrystal());
+		modules.add(new AutoCope());
+		modules.add(new AutoTotem());
+		modules.add(new SmartOffHand());
 		
 		// Exploits
 		modules.add(new Timer());

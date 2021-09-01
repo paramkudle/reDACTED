@@ -35,7 +35,7 @@ public class ClickGuiModule extends Module {
     public NumberSetting opacity = new NumberSetting("opacity", this, 255, 0, 255, 5);
 
     public ClickGuiModule() {
-        super("clickGui", "classic hud", Keyboard.KEY_P, Category.CLIENT);
+        super("ClickGUI", "ClickGUI", Keyboard.KEY_P, Category.CLIENT);
         this.addSettings(blur, scrollMode, scrolls, description, animationSpeed);
         INSTANCE = this;
     }

@@ -21,11 +21,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 
 public class AutoCope extends Module {
-    public ModeSetting msg = new ModeSetting("msg", this, "cope&seethe", "cope&seethe", "u suck", "ez pz", "gg", "customMsg");
-    public BooleanSetting greenText = new BooleanSetting("greenText", this, true);
+    public ModeSetting msg = new ModeSetting("MSG", this, "GG", "Cope", "Slur", "EZ", "GG", "CustomMSG");
+    public BooleanSetting greenText = new BooleanSetting("GreenText", this, true);
 
     public AutoCope() {
-        super("autoCope", "automatically makes ur opponent cope.", Keyboard.KEY_NONE, Category.COMBAT);
+        super("AutoGG", "Says custom messages after killing a enemy", Keyboard.KEY_NONE, Category.COMBAT);
         this.addSettings(msg, greenText);
     }
     int delay = 0;
@@ -111,11 +111,11 @@ public class AutoCope extends Module {
         if(greenText.isEnabled()) starter = "> ";
 
         String message = "";
-        if(msg.is("cope&seethe")) message = starter + "cope and seethe, heres a tutorial for u https://www.youtube.com/watch?v=4t5AKrZu_KE";
-        if(msg.is("u suck")) message = starter + "wowowow u suck, postman owns u now.";
-        if(msg.is("ez pz")) message = starter + "ez pz";
-        if(msg.is("gg")) message = starter + "gg";
-        if(msg.is("customMsg")) message = starter + customMsgArg;
+        if(msg.is("Cope")) message = starter + "Cope harder";
+        if(msg.is("Slur")) message = starter + "You are so bad nigga";
+        if(msg.is("EZ")) message = starter + "EZZZZZZZZZZZ";
+        if(msg.is("GG")) message = starter + "GG";
+        if(msg.is("CustomMSG")) message = starter + customMsgArg;
 
         mc.player.connection.sendPacket(new CPacketChatMessage(message));
     }

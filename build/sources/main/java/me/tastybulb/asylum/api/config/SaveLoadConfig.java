@@ -100,10 +100,10 @@ public class SaveLoadConfig {
             if(s.toLowerCase().startsWith("mod:")) {
                 Module m = Asylum.moduleManager.getModule(args[1]);
                 if(m != null) {
-                    if(m.getName().equals("clickGuiModule") && m.getName().equals("hudEditor"))
+                    if(m.getName().equals("ClickGUIModule") && m.getName().equals("hudEditor"))
                         m.setToggled(!Boolean.parseBoolean(args[2]));
 
-                    if(!m.getName().equals("clickGuiModule") && !m.getName().equals("hudEditor"))
+                    if(!m.getName().equals("ClickGUIModule") && !m.getName().equals("hudEditor"))
                         m.setToggled(Boolean.parseBoolean(args[2]));
                     m.setKey(Integer.parseInt(args[3]));
                 }

@@ -1,4 +1,4 @@
-package me.tastybulb.asylum.impl.module.modules.player;
+package me.tastybulb.asylum.impl.module.modules.movement;
 
 import me.tastybulb.asylum.api.event.events.EventPacket;
 import me.tastybulb.asylum.impl.setting.settings.NumberSetting;
@@ -13,10 +13,10 @@ import net.minecraft.network.play.server.SPacketEntityVelocity;
 import net.minecraft.network.play.server.SPacketExplosion;
 
 public class Velocity extends Module {
-	public NumberSetting percent = new NumberSetting("percent", this, 0, 0, 100, 10);
+	public NumberSetting percent = new NumberSetting("Percent", this, 0, 0, 100, 10);
 	
 	public Velocity() {
-		super("Velocity", "stops you from taking knockback", Keyboard.KEY_NONE, Category.PLAYER);
+		super("Velocity", "Doesn't take dumb knockback", Keyboard.KEY_NONE, Category.MOVEMENT);
 	}
 	
 	public void onEnable() {

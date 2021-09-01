@@ -53,72 +53,56 @@ import java.util.stream.Collectors;
 
 import org.lwjgl.input.Keyboard;
 
-/**
- * @Author SrgantMooMoo
- * written on 1/18/2021
- * this was written by me, however, i took a lot of inspiration from a few other clients for this cause ive never written autocrystal before so here are some of the clients i used for help :)
- * - past
- * - gamesense
- * - wurstplus2
- * - salhack
- * also, i'm using some crystalUtils from gamesense listed below.
- */
-
-/*
- * rewritten on 3/15/21 by SrgantMooMoo
- */
-
 public class AutoCrystal extends Module {
 
-    // rewrite
-    public BooleanSetting breakCrystal = new BooleanSetting("breakCrystal", this, true);
-    public BooleanSetting placeCrystal = new BooleanSetting("placeCrystal", this, true);
+    public BooleanSetting breakCrystal = new BooleanSetting("BreakCrystal", this, true);
+    public BooleanSetting placeCrystal = new BooleanSetting("PlaceCrystal", this, true);
 
-    public ModeSetting switchHand = new ModeSetting("switch", this, "off", "off", "onEnable", "detect");
+    public ModeSetting switchHand = new ModeSetting("Switch", this, "Off", "Off", "OnEnable", "Detect");
 
-    public ModeSetting logic = new ModeSetting("logic", this, "break, place", "break, place", "place, break");
+    public ModeSetting logic = new ModeSetting("Logic", this, "Break, Place", "Break, Place", "Place, Break");
 
-    public NumberSetting breakSpeed = new NumberSetting("breakSpeed", this, 20, 0, 20, 1);
-    public ModeSetting breakType = new ModeSetting("breakType", this, "packet", "swing", "packet");
-    public ModeSetting breakHand = new ModeSetting("breakHand", this, "both", "main", "offhand", "both");
-    public ModeSetting breakMode = new ModeSetting("breakMode", this, "all", "all", "smart", "own");
-    public NumberSetting breakRange = new NumberSetting("breakRange", this, 4.4, 0.0, 10.0, 0.1);
+    public NumberSetting breakSpeed = new NumberSetting("BreakSpeed", this, 20, 0, 20, 1);
+    public ModeSetting breakType = new ModeSetting("BreakType", this, "Packet", "Swing", "Packet");
+    public ModeSetting breakHand = new ModeSetting("BreakHand", this, "Both", "Main", "Offhand", "Both");
+    public ModeSetting breakMode = new ModeSetting("BreakMode", this, "All", "All", "Smart", "Own");
+    public NumberSetting breakRange = new NumberSetting("BreakRange", this, 4.4, 0.0, 10.0, 0.1);
 
-    public NumberSetting placeRange = new NumberSetting("placeRange", this, 4.4, 0.0, 6.0, 0.1);
+    public NumberSetting placeRange = new NumberSetting("PlaceRange", this, 4.4, 0.0, 6.0, 0.1);
 
-    public NumberSetting facePlaceValue = new NumberSetting("facePlcVal", this, 8, 0, 36, 1);
+    public NumberSetting facePlaceValue = new NumberSetting("FacePlaceValue", this, 8, 0, 36, 1);
 
-    public BooleanSetting highPing = new BooleanSetting("highPing", this, true);
+    public BooleanSetting highPing = new BooleanSetting("HighPing", this, true);
 
-    public BooleanSetting antiGhost = new BooleanSetting("antiGhosting", this, true);
+    public BooleanSetting antiGhost = new BooleanSetting("AntiGhosting", this, true);
 
-    public BooleanSetting raytrace = new BooleanSetting("raytrace", this, true);
+    public BooleanSetting raytrace = new BooleanSetting("Raytrace", this, true);
 
-    public BooleanSetting rotate = new BooleanSetting("rotate", this, true);
-    public BooleanSetting spoofRotations = new BooleanSetting("spoofRotations", this, true);
+    public BooleanSetting rotate = new BooleanSetting("Rotate", this, true);
+    public BooleanSetting spoofRotations = new BooleanSetting("SpoofRotations", this, true);
 
-    public NumberSetting minDmg = new NumberSetting("minDmg", this, 5, 0, 36, 1);
+    public NumberSetting minDmg = new NumberSetting("MinDMG", this, 5, 0, 36, 1);
 
-    public BooleanSetting multiplace = new BooleanSetting("multiplace", this, false);
-    public NumberSetting multiplaceValue = new NumberSetting("multiplaceValue", this, 2, 1, 10, 1);
-    public BooleanSetting multiplacePlus = new BooleanSetting("multiplacePlus", this, true);
+    public BooleanSetting multiplace = new BooleanSetting("Multiplace", this, false);
+    public NumberSetting multiplaceValue = new NumberSetting("MultiplaceValue", this, 2, 1, 10, 1);
+    public BooleanSetting multiplacePlus = new BooleanSetting("MultiplacePlus", this, true);
 
-    public BooleanSetting antiSuicide = new BooleanSetting("antiSuicide", this, false);
-    public NumberSetting maxSelfDmg = new NumberSetting("antiSuicideValue", this, 10, 0, 36, 1);
+    public BooleanSetting antiSuicide = new BooleanSetting("AntiSuicide", this, false);
+    public NumberSetting maxSelfDmg = new NumberSetting("AntiSuicide Value", this, 10, 0, 36, 1);
 
-    public BooleanSetting antiSelfPop = new BooleanSetting("antiSelfPop", this, true);
+    public BooleanSetting antiSelfPop = new BooleanSetting("AntiSelfPop", this, true);
 
-    public NumberSetting enemyRange = new NumberSetting("range", this, 6.0, 0.0, 16.0, 1.0);
-    public NumberSetting wallsRange = new NumberSetting("wallsRange", this, 3.5, 0.0, 10.0, 0.1);
+    public NumberSetting enemyRange = new NumberSetting("Range", this, 6.0, 0.0, 16.0, 1.0);
+    public NumberSetting wallsRange = new NumberSetting("Walls Range", this, 3.5, 0.0, 10.0, 0.1);
 
-    public BooleanSetting mode113 = new BooleanSetting("1.13place", this, false);
+    public BooleanSetting mode113 = new BooleanSetting("1.13 Place", this, false);
 
-    public BooleanSetting outline = new BooleanSetting("outline", this, false);
-    public BooleanSetting showDamage = new BooleanSetting("showDamage", this, true);
-    public ColorSetting color = new ColorSetting("color", this, Asylum.ASYLUM_COLOR);
+    public BooleanSetting outline = new BooleanSetting("Outline", this, false);
+    public BooleanSetting showDamage = new BooleanSetting("ShowDamage", this, true);
+    public ColorSetting color = new ColorSetting("Color", this, Asylum.ASYLUM_COLOR);
 
     public AutoCrystal() {
-        super ("autoCrystal", "best ca on the block.", Keyboard.KEY_NONE, Category.COMBAT);
+        super ("AutoCrystal", "Automatically places crystals to kill enemies", Keyboard.KEY_NONE, Category.COMBAT);
         this.addSettings(breakCrystal, placeCrystal, logic, switchHand, breakSpeed, breakType, breakMode, breakHand, breakRange, placeRange, highPing, antiGhost, raytrace, rotate,
                 spoofRotations, mode113, multiplace, multiplaceValue, multiplacePlus, antiSuicide, maxSelfDmg, antiSelfPop, minDmg, facePlaceValue, enemyRange, wallsRange, showDamage, outline, color);
     }
@@ -154,7 +138,7 @@ public class AutoCrystal extends Module {
     @Override
     public void onDisable() {
         super.onDisable();
-        if(switchHand.is("onEnable")) {
+        if(switchHand.is("OnEnable")) {
             mc.player.inventory.currentItem = oldSlot;
             mc.playerController.updateController();
         }
@@ -186,10 +170,10 @@ public class AutoCrystal extends Module {
     }
 
     private void implementLogic() {
-        if(logic.is("break, place")) {
+        if(logic.is("Break, Place")) {
             breakLogic();
             placeLogic();
-        }else if(logic.is("place, break")) {
+        }else if(logic.is("Place, Break")) {
             placeLogic();
             breakLogic();
         }
@@ -216,10 +200,10 @@ public class AutoCrystal extends Module {
                     lookAtPacket(crystal.posX, crystal.posY, crystal.posZ, mc.player);
                 }
 
-                if(breakType.is("swing")) {
+                if(breakType.is("Swing")) {
                     breakCrystal(crystal);
                 }
-                if(breakType.is("packet")) {
+                if(breakType.is("Packet")) {
                     mc.player.connection.sendPacket(new CPacketUseEntity(crystal));
                     swingArm();
                 }
@@ -275,7 +259,7 @@ public class AutoCrystal extends Module {
 
         // switch system (onEnable)
         if (!offHand && mc.player.inventory.currentItem != crystalSlot) {
-            if (this.switchHand.is("onEnable")) {
+            if (this.switchHand.is("OnEnable")) {
                 mc.player.inventory.currentItem = crystalSlot;
                 mc.playerController.updateController();
                 resetRotation();
@@ -348,7 +332,7 @@ public class AutoCrystal extends Module {
 
             if (blockPos1 != null) {
                 if (!offHand && mc.player.inventory.currentItem != crystalSlot) {
-                    if(this.switchHand.is("detect")) {
+                    if(this.switchHand.is("Detect")) {
                         mc.player.inventory.currentItem = crystalSlot;
                         mc.playerController.updateController();
                         resetRotation();
@@ -377,7 +361,7 @@ public class AutoCrystal extends Module {
                 mc.player.connection.sendPacket(new CPacketAnimation(EnumHand.MAIN_HAND));
                 PlacedCrystals.add(blockPos1);
 
-                if (ModuleManager.isModuleEnabled("autoCope")) AutoCope.addTarget(renderEnt.getName());
+                if (ModuleManager.isModuleEnabled("AutoCope")) AutoCope.addTarget(renderEnt.getName());
             }
 
             if (isSpoofingAngles) {
@@ -418,11 +402,11 @@ public class AutoCrystal extends Module {
     }
 
     private void swingArm() {
-        if (breakHand.getMode().equalsIgnoreCase("both") && mc.player.getHeldItemOffhand() != null) {
+        if (breakHand.getMode().equalsIgnoreCase("Both") && mc.player.getHeldItemOffhand() != null) {
             mc.player.swingArm(EnumHand.MAIN_HAND);
             mc.player.swingArm(EnumHand.OFF_HAND);
         }
-        else if (breakHand.getMode().equalsIgnoreCase("offhand") && mc.player.getHeldItemOffhand() != null) {
+        else if (breakHand.getMode().equalsIgnoreCase("Offhand") && mc.player.getHeldItemOffhand() != null) {
             mc.player.swingArm(EnumHand.OFF_HAND);
         }
         else {
