@@ -6,7 +6,7 @@ import com.lukflug.panelstudio.settings.EnumSetting;
 import me.tastybulb.asylum.impl.Asylum;
 import me.tastybulb.asylum.impl.module.Module;
 import me.tastybulb.asylum.impl.setting.Setting;
-import scala.actors.threadpool.Arrays;
+import java.util.Arrays;
 
 public class ModeSetting extends Setting implements EnumSetting {
 

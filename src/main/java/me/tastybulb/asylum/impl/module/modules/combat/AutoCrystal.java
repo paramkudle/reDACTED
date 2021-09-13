@@ -358,6 +358,7 @@ public class AutoCrystal extends Module {
                         switched = false;
                     }*/
 
+
                 mc.player.connection.sendPacket(new CPacketAnimation(EnumHand.MAIN_HAND));
                 PlacedCrystals.add(blockPos1);
 
@@ -465,10 +466,6 @@ public class AutoCrystal extends Module {
         }
     });
 
-    /*
-     * somewhat custom crystal utils
-     */
-
     public boolean canPlaceCrystal(BlockPos blockPos) {
         BlockPos airBlock1 = blockPos.add(0, 1, 0);
         BlockPos airBlock2 = blockPos.add(0, 2, 0);
@@ -521,10 +518,6 @@ public class AutoCrystal extends Module {
         positions.addAll(getSphere(getPlayerPos(), (float)placeRange.getValue(), (int)placeRange.getValue(), false, true, 0).stream().filter(this::canPlaceCrystal).collect(Collectors.toList()));
         return positions;
     }
-
-    /*
-     * Crystal Utils from gamesense
-     */
 
     private boolean crystalCheck(Entity crystal) {
 

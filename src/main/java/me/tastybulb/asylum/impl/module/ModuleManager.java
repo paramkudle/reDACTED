@@ -64,7 +64,7 @@ public class ModuleManager {
 	}
 	
 	public static void onWorldRender(RenderWorldLastEvent event) {
-		Minecraft.getMinecraft().mcProfiler.startSection("postman");
+		Minecraft.getMinecraft().mcProfiler.startSection("asylum");
 		Minecraft.getMinecraft().mcProfiler.startSection("setup");
 		RenderUtil.prepare();
 		Minecraft.getMinecraft().mcProfiler.endSection();
