@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 import me.tastybulb.asylum.impl.module.modules.combat.*;
-import me.tastybulb.asylum.impl.module.modules.exploits.*;
+import me.tastybulb.asylum.impl.module.modules.miscellaneous.*;
 import me.tastybulb.asylum.impl.Asylum;
 //import me.tastybulb.asylum.impl.module.modules.Client.ClientFont;
 import me.tastybulb.asylum.impl.module.modules.movement.*;
+import me.tastybulb.asylum.impl.module.modules.player.AutoRespawn;
 import me.tastybulb.asylum.impl.module.modules.render.*;
-import me.tastybulb.asylum.impl.module.modules.Client.*;
+import me.tastybulb.asylum.impl.module.modules.client.*;
 import me.tastybulb.asylum.impl.ui.ClickGuiModule;
 import me.tastybulb.asylum.impl.ui.HudEditor;
 import org.lwjgl.input.Keyboard;
@@ -27,8 +28,8 @@ public class ModuleManager {
 		modules = new ArrayList<>();
 		
 		// Player
-		modules.add(new Velocity());
-		
+		modules.add(new AutoRespawn());
+
 		// Render
 		modules.add(new Fullbright());
 		
@@ -39,13 +40,13 @@ public class ModuleManager {
 		modules.add(new AutoTotem());
 		modules.add(new SmartOffHand());
 		
-		// Exploits
+		// Miscellaneous
 		modules.add(new Timer());
 		
 		// Movement
 		modules.add(new Sprint());
-		modules.add(new Sneak());
 		modules.add(new Strafe());
+		modules.add(new Velocity());
 		
 		// Client
 		modules.add(new ClickGuiModule());
