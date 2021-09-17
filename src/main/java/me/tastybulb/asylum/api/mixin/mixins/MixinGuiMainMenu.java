@@ -16,4 +16,6 @@ public class MixinGuiMainMenu extends GuiScreen {
 		mc.fontRenderer.drawStringWithShadow(TextFormatting.RED + "Asylum Client", 1, 1, 0xffffff);
 	}
 	
+
 }*/
+
