@@ -1,4 +1,4 @@
-package me.tastybulb.asylum.api.mixin.mixins;
+/**package me.tastybulb.asylum.api.mixin.mixins;
 
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.client.entity.EntityPlayerSP;
@@ -26,3 +26,4 @@ public abstract class MixinEntityPlayerSP extends AbstractClientPlayer {
 	            info.cancel();
 	    }
 }
+*/

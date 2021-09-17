@@ -110,7 +110,7 @@ public abstract class Module implements Toggleable {
 
 	protected void disable() {
 		onDisable();
-		setToggled(false);
+		//setToggled(false);
 	}
 
 	protected void onEnable() {
@@ -118,7 +118,7 @@ public abstract class Module implements Toggleable {
 	}
 
 	protected void onDisable() {
-
+		setToggled(false);
 	}
 
 	public void onWorldRender(RenderEvent event) {

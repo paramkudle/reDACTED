@@ -1,4 +1,4 @@
-package me.tastybulb.asylum.api.mixin.mixins;
+/**package me.tastybulb.asylum.api.mixin.mixins;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -16,4 +16,4 @@ public class MixinGuiMainMenu extends GuiScreen {
 		mc.fontRenderer.drawStringWithShadow(TextFormatting.RED + "Asylum Client", 1, 1, 0xffffff);
 	}
 	
-}
+}*/

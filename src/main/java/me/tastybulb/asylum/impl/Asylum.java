@@ -33,9 +33,9 @@ public class Asylum {
 	public static final String modid = "asylum";
 	public static final String name = "Asylum";
 	public static final String version = "2.1";
-	public static final String acceptedVersions = "[1.12.2]";
-	public static final String clientProxyClass = "me.tastybulb.asylum.api.proxy.ClientProxy";
-	public static final String commonProxyClass = "me.tastybulb.asylum.api.proxy.CommonProxy";
+	//public static final String acceptedVersions = "[1.12.2]";
+	//public static final String clientProxyClass = "me.tastybulb.asylum.api.proxy.ClientProxy";
+	//public static final String commonProxyClass = "me.tastybulb.asylum.api.proxy.CommonProxy";
 	public static ClickGui clickGui;
 	public static final JColor ASYLUM_COLOR = new JColor(137, 72, 255, 100);
 
@@ -60,14 +60,7 @@ public class Asylum {
 	public static Asylum getInstance() {
 		return instance;
 	}
-	
-	@SidedProxy(clientSide = clientProxyClass, serverSide = commonProxyClass)
-	public static CommonProxy proxy;
 
-	@EventHandler
-	public void PreInit (FMLPreInitializationEvent event) {
-		
-	}
 	
 	@EventHandler
 	public void Init (FMLInitializationEvent event) {
@@ -101,11 +94,6 @@ public class Asylum {
 		log.info("Config Initialized!");
 		
 		log.info("Asylum Finished Initialization");
-		
-	}
-	
-	@EventHandler
-	public void PostInit (FMLPostInitializationEvent event) {
 		
 	}
 }

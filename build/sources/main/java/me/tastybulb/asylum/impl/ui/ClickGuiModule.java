@@ -54,7 +54,7 @@ public class ClickGuiModule extends Module {
 
     @Override
     public void onDisable() {
-        mc.entityRenderer.getShaderGroup().deleteShaderGroup();
+        //mc.entityRenderer.getShaderGroup().deleteShaderGroup();
     }
 
     @Override
