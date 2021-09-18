@@ -62,7 +62,7 @@ public class ClickGuiModule extends Module {
         if(Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {
             this.disable();
         }
-        if(ModuleManager.getModuleByName("hudEditor").isToggled()) {
+        if(ModuleManager.getModuleByName("HUDEditor").isToggled()) {
             this.disable();
         }
 

@@ -10,10 +10,6 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author 086
- */
-
 public class CustomFontRenderer extends CustomFont {
     protected CharData[] boldChars = new CharData[256];
     protected CharData[] italicChars = new CharData[256];

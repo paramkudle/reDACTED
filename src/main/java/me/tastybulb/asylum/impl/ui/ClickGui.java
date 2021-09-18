@@ -68,20 +68,20 @@ public class ClickGui extends MinecraftHUDGUI {
             public void drawString(Point pos, String s, Color c) {
                 end();
                 int x=pos.x+2, y=pos.y+1;
-                if(ModuleManager.getModuleByName("clientFont").isToggled()) FontUtils.drawStringWithShadow(true, s, x, y, new JColor(c));
+                if(ModuleManager.getModuleByName("ClientFont").isToggled()) FontUtils.drawStringWithShadow(true, s, x, y, new JColor(c));
                 else FontUtils.drawStringWithShadow(false, s, x, y, new JColor(c));
                 begin();
             }
 
             @Override
             public int getFontWidth(String s) {
-                if(ModuleManager.isModuleEnabled("clientFont")) return Math.round(FontUtils.getStringWidth(true,s))+4;
+                if(ModuleManager.isModuleEnabled("ClientFont")) return Math.round(FontUtils.getStringWidth(true,s))+4;
                 else return Math.round(FontUtils.getStringWidth(false,s))+4;
             }
 
             @Override
             public int getFontHeight() {
-                if(ModuleManager.isModuleEnabled("clientFont")) return Math.round(FontUtils.getFontHeight(true))+2;
+                if(ModuleManager.isModuleEnabled("ClientFont")) return Math.round(FontUtils.getFontHeight(true))+2;
                 else return Math.round(FontUtils.getFontHeight(false))+2;
             }
         };

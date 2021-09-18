@@ -6,10 +6,10 @@ import java.util.stream.Collectors;
 import me.tastybulb.asylum.impl.module.modules.combat.*;
 import me.tastybulb.asylum.impl.module.modules.exploits.*;
 import me.tastybulb.asylum.impl.Asylum;
-//import me.tastybulb.asylum.impl.module.modules.Client.ClientFont;
+import me.tastybulb.asylum.impl.module.modules.hud.*;
+import me.tastybulb.asylum.impl.module.modules.Client.*;
 import me.tastybulb.asylum.impl.module.modules.movement.*;
 import me.tastybulb.asylum.impl.module.modules.render.*;
-import me.tastybulb.asylum.impl.module.modules.Client.*;
 import me.tastybulb.asylum.impl.ui.ClickGuiModule;
 import me.tastybulb.asylum.impl.ui.HudEditor;
 import org.lwjgl.input.Keyboard;
@@ -51,7 +51,10 @@ public class ModuleManager {
 		modules.add(new ClickGuiModule());
 		modules.add(new HudEditor());
 		modules.add(new ClientFont());
-		
+
+		// HUD
+		modules.add(new Watermark());
+
 	}
 	
 	public static void onUpdate() {

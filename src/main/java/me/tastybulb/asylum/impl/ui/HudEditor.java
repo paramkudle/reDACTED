@@ -8,11 +8,11 @@ import org.lwjgl.input.Keyboard;
 import net.minecraft.util.ResourceLocation;
 
 public class HudEditor extends Module {
-    public BooleanSetting exitToClickGui = new BooleanSetting("exitToClickGui", this, true);
+    //public BooleanSetting exitToClickGui = new BooleanSetting("exitToClickGui", this, true);
 
     public HudEditor() {
-        super("hudEditor", "descrp", Keyboard.KEY_NONE, Category.CLIENT);
-        this.addSettings(exitToClickGui);
+        super("HUDEditor", "Opens a new window to edit the HUD", Keyboard.KEY_NONE, Category.CLIENT);
+        //this.addSettings(exitToClickGui);
     }
     private ResourceLocation shader = new ResourceLocation("minecraft", "shaders/post/blur" + ".json");
 
@@ -26,12 +26,7 @@ public class HudEditor extends Module {
     @Override
     public void onUpdate() {
         if(Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {
-            if(exitToClickGui.isEnabled()) {
                 this.disable();
-                Asylum.clickGui.enterGUI();
-            }else {
-                this.disable();
-            }
         }
 
     }

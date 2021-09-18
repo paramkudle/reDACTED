@@ -17,10 +17,6 @@ import me.tastybulb.asylum.impl.setting.settings.ModeSetting;
 import me.tastybulb.asylum.impl.setting.settings.NumberSetting;
 import net.minecraft.client.Minecraft;
 
-/*
- * Written by @SrgantMooMoo on 11/30/20 with inspiration taken from @SebSb.
- */
-
 public class SaveLoadConfig {
 
     private File dir;
@@ -100,10 +96,10 @@ public class SaveLoadConfig {
             if(s.toLowerCase().startsWith("mod:")) {
                 Module m = Asylum.moduleManager.getModule(args[1]);
                 if(m != null) {
-                    if(m.getName().equals("ClickGUIModule") && m.getName().equals("hudEditor"))
+                    if(m.getName().equals("ClickGUIModule") && m.getName().equals("HUDEditor"))
                         m.setToggled(!Boolean.parseBoolean(args[2]));
 
-                    if(!m.getName().equals("ClickGUIModule") && !m.getName().equals("hudEditor"))
+                    if(!m.getName().equals("ClickGUIModule") && !m.getName().equals("HUDEditor"))
                         m.setToggled(Boolean.parseBoolean(args[2]));
                     m.setKey(Integer.parseInt(args[3]));
                 }

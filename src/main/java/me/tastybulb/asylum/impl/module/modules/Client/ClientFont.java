@@ -10,10 +10,10 @@ import me.tastybulb.asylum.impl.setting.settings.ModeSetting;
 import org.lwjgl.input.Keyboard;
 
 public class ClientFont extends Module {
-    public ModeSetting font = new ModeSetting("font", this, "Comic Sans Ms", "Comic Sans Ms", "Arial", "Verdana");
+    public ModeSetting font = new ModeSetting("Font", this, "Comic Sans Ms", "Comic Sans Ms", "Arial", "Verdana");
 
     public ClientFont() {
-        super ("clientFont", "changes the font the client uses.", Keyboard.KEY_NONE, Category.CLIENT);
+        super ("ClientFont", "Choose the font of the client", Keyboard.KEY_NONE, Category.CLIENT);
         this.addSettings(font);
     }
 

@@ -1,6 +1,9 @@
 package me.tastybulb.asylum.impl;
 
 import me.tastybulb.asylum.api.command.CommandManager;
+import me.tastybulb.asylum.api.config.ClickGuiLoad;
+import me.tastybulb.asylum.api.config.ClickGuiSave;
+import me.tastybulb.asylum.api.config.ConfigStopper;
 import me.tastybulb.asylum.api.config.SaveLoadConfig;
 import me.tastybulb.asylum.api.event.EventProcessor;
 import me.tastybulb.asylum.api.friend.FriendManager;
@@ -51,6 +54,8 @@ public class Asylum {
 	public static CommandManager commandManager;
 	public EventProcessor eventProcessor;
 	public static FriendManager friendManager;
+	public static ClickGuiSave clickGuiSave;
+	public static ClickGuiLoad clickGuiLoad;
 
 	/**@Instance
 	public static Asylum instance;
@@ -86,11 +91,17 @@ public class Asylum {
 		friendManager = new FriendManager();
 		log.info("Friend Manager Started");
 
-		MinecraftForge.EVENT_BUS.register(new ModuleManager()); // this is necessary for key input to work.
+		MinecraftForge.EVENT_BUS.register(new ModuleManager());
 		moduleManager = new ModuleManager();
 		log.info("Module Manager Initialized!");
 
 		clickGui = new ClickGui();
+
+
+		clickGuiSave = new ClickGuiSave();
+		clickGuiLoad = new ClickGuiLoad();
+		Runtime.getRuntime().addShutdownHook(new ConfigStopper());
+		log.info("configs initialized.");
 
 		saveLoadConfig = new SaveLoadConfig();
 		log.info("Config Initialized!");
