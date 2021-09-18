@@ -1,4 +1,4 @@
-package me.tastybulb.asylum.impl.module.modules.exploits;
+package me.tastybulb.asylum.impl.module.modules.miscellaneous;
 
 import me.tastybulb.asylum.impl.setting.settings.NumberSetting;
 import org.lwjgl.input.Keyboard;
@@ -13,7 +13,7 @@ public class Timer extends Module {
 	public NumberSetting speed = new NumberSetting("speed", this, 20, 1, 300, 1);
 	
 	public Timer() {
-		super("Timer", "changes the game speed", Keyboard.KEY_NONE, Category.EXPLOITS);
+		super("Timer", "changes the game speed", Keyboard.KEY_NONE, Category.MISCELLANEOUS);
 		this.addSettings(speed);
 	}
 	

@@ -10,7 +10,7 @@ import me.tastybulb.asylum.impl.module.Category;
 import me.tastybulb.asylum.impl.module.HudModule;
 import me.tastybulb.asylum.impl.module.Module;
 import me.tastybulb.asylum.impl.module.ModuleManager;
-import me.tastybulb.asylum.impl.module.modules.Client.ColorMain;
+import me.tastybulb.asylum.impl.module.modules.client.ColorMain;
 import me.tastybulb.asylum.impl.setting.Setting;
 import me.tastybulb.asylum.impl.setting.settings.BooleanSetting;
 import me.tastybulb.asylum.impl.setting.settings.ModeSetting;
