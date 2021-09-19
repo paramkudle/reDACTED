@@ -1,4 +1,6 @@
 <img valign="middle" src="https://img.shields.io/badge/Minecraft-1.12.2-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/Current Version-2.1-red.svg">
+<img valign="middle" src="https://img.shields.io/badge/Client Made For-Personal Use-brightgreen.svg">
 
 # Asylum Client
 Epic Client Made By TastyBulb
@@ -62,3 +64,5 @@ ViewModel - helps you become the very edgy pvper
 ## Credits
 ZeroMemes Alpine Event System: https://github.com/ZeroMemes/Alpine
 srgantmoomoo's Moo-Base: https://github.com/moomooooo/Moo-Base/
+
+###### Notice: I made this client for personal use, if you need Credits just DM me at TastyBulb#7554

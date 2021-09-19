@@ -58,7 +58,7 @@ public class CommandManager {
                 }
             }
             if(!commandFound) {
-                MessageUtil.sendClientPrefixMessage(ChatFormatting.DARK_RED + "command does not exist, use " + ChatFormatting.ITALIC + prefix + "help " + ChatFormatting.RESET + "" + ChatFormatting.DARK_RED + "for help.");
+                MessageUtil.sendClientPrefixMessage(ChatFormatting.DARK_RED + "Command does not exist, please use " + ChatFormatting.ITALIC + prefix + "help " + ChatFormatting.RESET + "" + ChatFormatting.DARK_RED + "for help.");
             }
         }
     });
@@ -88,7 +88,7 @@ public class CommandManager {
 
     public static void correctUsageMsg(String name, String syntax) {
         // usage
-        String usage = "correct usage of " + name + " command -> " + prefix + syntax;
+        String usage = "Correct usage of " + name + " command -> " + prefix + syntax;
 
         // prefix
         String message = ChatFormatting.AQUA + "@" + ChatFormatting.ITALIC + Asylum.name + ChatFormatting.GRAY + ": " + usage;

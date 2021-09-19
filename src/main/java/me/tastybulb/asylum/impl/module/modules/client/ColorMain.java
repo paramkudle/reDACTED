@@ -1,4 +1,4 @@
-package me.tastybulb.asylum.impl.module.modules.client;
+package me.tastybulb.asylum.impl.module.modules.Client;
 
 import java.util.ArrayList;
 

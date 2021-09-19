@@ -16,11 +16,6 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 
-/*
- * Took most of this from from postman cause i dont want to write it all :)
- * More credits in postman, but some of this is from kami, gamesense, and osiris.
- */
-
 public class RenderUtil {
 	private static final Minecraft mc = Wrapper.getMinecraft();
 	

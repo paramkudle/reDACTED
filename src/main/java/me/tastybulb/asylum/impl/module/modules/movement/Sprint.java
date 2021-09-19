@@ -8,7 +8,7 @@ import me.tastybulb.asylum.impl.module.Module;
 public class Sprint extends Module {
 
 	public Sprint() {
-		super("Sprint", "automatically sprints when u move forward.", Keyboard.KEY_R, Category.MOVEMENT);
+		super("Sprint", "Always sprint", Keyboard.KEY_R, Category.MOVEMENT);
 	}
 	
 	@Override

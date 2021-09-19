@@ -16,7 +16,7 @@ public class ClickGuiLoad {
         }
     }
 
-    String fileName = "postman/";
+    String fileName = "asylum/";
     String mainName = "clickGui/";
 
     public void clickGuiLoad() throws IOException {

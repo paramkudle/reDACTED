@@ -95,6 +95,7 @@ shadowJar {
         include(dependency('club.minnced:java-discord-rpc:2.0.1'))
         include(dependency('com.lukflug:panelstudio'))
         include(dependency('com.lukflug:panelstudio-mc12'))
+        include(dependency('com.github.cabaletta:baritone:1.2.14'))
     }
     exclude 'dummyThing'
     exclude 'LICENSE.txt'

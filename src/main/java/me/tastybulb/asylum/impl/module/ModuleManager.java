@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 import me.tastybulb.asylum.impl.module.modules.combat.*;
-import me.tastybulb.asylum.impl.module.modules.exploits.*;
+import me.tastybulb.asylum.impl.module.modules.miscellaneous.*;
 import me.tastybulb.asylum.impl.Asylum;
 import me.tastybulb.asylum.impl.module.modules.hud.*;
 import me.tastybulb.asylum.impl.module.modules.Client.*;
 import me.tastybulb.asylum.impl.module.modules.movement.*;
+import me.tastybulb.asylum.impl.module.modules.player.FreeCam;
 import me.tastybulb.asylum.impl.module.modules.render.*;
 import me.tastybulb.asylum.impl.ui.ClickGuiModule;
 import me.tastybulb.asylum.impl.ui.HudEditor;
@@ -27,10 +28,8 @@ public class ModuleManager {
 		modules = new ArrayList<>();
 		
 		// Player
-		modules.add(new Velocity());
 		
 		// Render
-		modules.add(new Fullbright());
 		
 		// Combat
 		modules.add(new KillAura());
@@ -38,14 +37,18 @@ public class ModuleManager {
 		modules.add(new AutoCope());
 		modules.add(new AutoTotem());
 		modules.add(new SmartOffHand());
+		modules.add(new AutoArmor());
+		modules.add(new Criticals());
+		modules.add(new Surround());
+		modules.add(new HotbarRefill());
 		
 		// Exploits
 		modules.add(new Timer());
 		
 		// Movement
 		modules.add(new Sprint());
-		modules.add(new Sneak());
-		modules.add(new Strafe());
+		modules.add(new AutoWalk());
+		modules.add(new GUIMove());
 		
 		// Client
 		modules.add(new ClickGuiModule());
@@ -54,6 +57,12 @@ public class ModuleManager {
 
 		// HUD
 		modules.add(new Watermark());
+		modules.add(new ArmorHUD());
+		modules.add(new KeyStrokes());
+		modules.add(new NetherCoords());
+		modules.add(new Coords());
+		modules.add(new Inventory());
+		modules.add(new Welcomer());
 
 	}
 	

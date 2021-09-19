@@ -21,7 +21,7 @@ public class MessageUtil {
     }
 
     /**
-     * Command-oriented message, with the nature of commands we don't want them being a notification
+     * Command Message
      **/
     public static void sendCommandMessage(String message, boolean prefix) {
         String watermark1 = prefix ? watermark : "";

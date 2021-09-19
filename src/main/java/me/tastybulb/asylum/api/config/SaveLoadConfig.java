@@ -8,11 +8,13 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
+import me.tastybulb.asylum.api.command.CommandManager;
 import me.tastybulb.asylum.impl.Asylum;
 import me.tastybulb.asylum.impl.module.Module;
 import me.tastybulb.asylum.impl.module.ModuleManager;
 import me.tastybulb.asylum.impl.setting.Setting;
 import me.tastybulb.asylum.impl.setting.settings.BooleanSetting;
+import me.tastybulb.asylum.impl.setting.settings.ColorSetting;
 import me.tastybulb.asylum.impl.setting.settings.ModeSetting;
 import me.tastybulb.asylum.impl.setting.settings.NumberSetting;
 import net.minecraft.client.Minecraft;
@@ -40,11 +42,13 @@ public class SaveLoadConfig {
     public void save() {
         ArrayList<String> toSave = new ArrayList<String>();
 
+        // modules and keybinds
         for(Module mod : ModuleManager.modules) {
             if(!mod.getName().equals("tabGui"))
                 toSave.add("MOD:" + mod.getName() + ":" + mod.isToggled() + ":" + mod.getKey());
         }
 
+        // settings
         for(Module mod : ModuleManager.modules) {
             for(Setting setting : mod.settings) {
 
@@ -62,8 +66,22 @@ public class SaveLoadConfig {
                     ModeSetting mode = (ModeSetting) setting;
                     toSave.add("SET:" + mod.getName() + ":" + setting.name + ":" + mode.getMode());
                 }
+
+                if(setting instanceof ColorSetting) {
+                    ColorSetting color = (ColorSetting) setting;
+                    toSave.add("SET:" + mod.getName() + ":" + setting.name + ":" + color.toInteger() + ":" + color.getRainbow());
+                }
             }
         }
+
+        // command prefix
+        toSave.add("COMMANDPREFIX:" + CommandManager.prefix);
+		
+		/* friends
+		List<String> friends = FriendManager.getFriendsByName();
+		String friendsReplace = friends.toString();
+		String friendsReep = friendsReplace.replaceAll("[]", "");
+		toSave.add("FRIENDS:" + friendsReep);*/
 
         try {
             PrintWriter pw = new PrintWriter(this.dataFile);
@@ -96,12 +114,21 @@ public class SaveLoadConfig {
             if(s.toLowerCase().startsWith("mod:")) {
                 Module m = Asylum.moduleManager.getModule(args[1]);
                 if(m != null) {
-                    if(m.getName().equals("ClickGUIModule") && m.getName().equals("HUDEditor"))
-                        m.setToggled(!Boolean.parseBoolean(args[2]));
+                    // hud modules
+                    if(m.getName().equals("clickGui")) m.setToggled(false);
+                    if(m.getName().equals("hudEditor")) m.setToggled(false);
+                    // normal modules that can cause crashes
+                    if(m.getName().equals("blink")) m.setToggled(false);
+                    if(m.getName().equals("autoDisconnect")) m.setToggled(false);
 
-                    if(!m.getName().equals("ClickGUIModule") && !m.getName().equals("HUDEditor"))
+
+                    if(!m.getName().equals("clickGui")
+                            && !m.getName().equals("hudEditor")
+                            && !m.getName().equals("blink")
+                            && !m.getName().equals("autoDisconnect")) {
                         m.setToggled(Boolean.parseBoolean(args[2]));
-                    m.setKey(Integer.parseInt(args[3]));
+                        m.setKey(Integer.parseInt(args[3]));
+                    }
                 }
             }else if(s.toLowerCase().startsWith("set:")) {
                 Module m = Asylum.moduleManager.getModule(args[1]);
@@ -114,12 +141,20 @@ public class SaveLoadConfig {
                         if(setting instanceof NumberSetting) {
                             ((NumberSetting)setting).setValue(Double.parseDouble(args[3]));
                         }
-                        if(setting instanceof ModeSetting) {
+                        if(setting instanceof ModeSetting && ((ModeSetting) setting).modes.toString().contains(args[3])) { // u have to make sure the mode getting loaded actually still exists or else u will have angry mob of ppl telling u ur config is fucking garbage... but actually yes ur config is fucking garbage because u wrote it when u were fucking monke and didn't know wtf u were doing, like seriously come on now, who the fuck writes a config in a normal fucking txt file, r u fucking stupid??????? like just do it in fucking json u fucking dumb cunt.
                             ((ModeSetting)setting).setMode(args[3]);
+                        }
+                        if(setting instanceof ColorSetting) {
+                            ((ColorSetting)setting).fromInteger(Integer.parseInt(args[3]));
+                            ((ColorSetting)setting).setRainbow(Boolean.parseBoolean(args[4]));
                         }
                     }
                 }
-            }
+            }else if(s.toLowerCase().startsWith("commandprefix:")) {
+                CommandManager.setCommandPrefix(args[1]);
+            }/*else if(s.toLowerCase().startsWith("friends:")) {
+				FriendManager.addFriend(args[1]);
+			}*/
         }
     }
 }

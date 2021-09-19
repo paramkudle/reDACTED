@@ -4,11 +4,6 @@ import java.awt.Color;
 
 import net.minecraft.client.renderer.GlStateManager;
 
-/**
-* @author lukflug
-*/
-// took this from postman too.
-
 public class JColor extends Color {
 	/**
 	 * 

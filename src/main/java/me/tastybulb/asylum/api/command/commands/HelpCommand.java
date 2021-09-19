@@ -8,32 +8,28 @@ import me.tastybulb.asylum.impl.Asylum;
 import net.minecraft.util.text.TextFormatting;
 
 public class HelpCommand extends Command {
-    public static Vanish vanish;
+    public static Toggle toggle;
 
     public HelpCommand() {
-        super("help", "helps lol.", "help", "h");
+        super("help", "Sends a help message", "help", "h");
     }
 
-    TextFormatting LIGHT_PURPLE = TextFormatting.LIGHT_PURPLE;
+    //TextFormatting LIGHT_PURPLE = TextFormatting.LIGHT_PURPLE;
     TextFormatting WHITE = TextFormatting.WHITE;
     TextFormatting GRAY = TextFormatting.GRAY;
-    TextFormatting AQUA = TextFormatting.AQUA;
-    TextFormatting BOLD = TextFormatting.BOLD;
+    //TextFormatting AQUA = TextFormatting.AQUA;
+    //TextFormatting BOLD = TextFormatting.BOLD;
     TextFormatting ITALIC = TextFormatting.ITALIC;
     TextFormatting RED = TextFormatting.RED;
 
     @Override
     public void onCommand(String[] args, String command) {
         String PREFIX = CommandManager.prefix;
-        vanish = new Vanish();
-
-        MessageUtil.sendClientPrefixMessage(ChatFormatting.GREEN + "-------------------");
+        toggle = new Toggle();
 
         MessageUtil.sendClientPrefixMessage(ChatFormatting.BOLD + Asylum.name + " " + Asylum.version + "!");
 
-        helpMessage(vanish.name, vanish.description, vanish.syntax);
-
-        MessageUtil.sendClientPrefixMessage(ChatFormatting.GREEN + "-------------------");
+        helpMessage(toggle.name, toggle.description, toggle.syntax);
 
     }
 

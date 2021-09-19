@@ -26,6 +26,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import org.lwjgl.opengl.Display;
 //import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 //import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
@@ -56,21 +57,10 @@ public class Asylum {
 	public static FriendManager friendManager;
 	public static ClickGuiSave clickGuiSave;
 	public static ClickGuiLoad clickGuiLoad;
-
-	/**@Instance
-	public static Asylum instance;
-
-	public Asylum() {
-		instance = this;
-	}
-
-	public static Asylum getInstance() {
-		return instance;
-	}
-	*/
 	
 	@EventHandler
 	public void Init (FMLInitializationEvent event) {
+		Display.setTitle(name + " " + version);
 		eventProcessor = new EventProcessor();
 		eventProcessor.init();
 		log.info("Asylum Event System Initialized!");
