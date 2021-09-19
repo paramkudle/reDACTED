@@ -1,8 +1,0 @@
-{
-"required": true,
-"compatibilityLevel": "JAVA_8",
-"package": "me.tastybulb.asylum.api.mixin.mixins",
-"refmap": "mixins.asylum.refmap.json",
-"mixins": [
-]
-}
