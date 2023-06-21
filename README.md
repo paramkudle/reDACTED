@@ -39,6 +39,6 @@ open a issue with the label `'Feature-Request'`.
 </details>
 
 ## Credits
-ZeroMemes Alpine Event System: https://github.com/ZeroMemes/Alpine
+ZeroMemes Alpine Event System: `https://github.com/ZeroMemes/Alpine`
 
 ###### Notice: I made this client for personal use.
