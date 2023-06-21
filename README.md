@@ -15,7 +15,7 @@ Put the `reDACTED.jar` in your mods folder and run 1.12.2 Forge.
 2. Paste `https://github.com/paramkudle/reDACTED/` in the URL field, and hit Clone.
 3. Allow gradle to set up the project. This might take a while. (~ 8 minutes)
 
-######Optionally,
+###### Optionally,
 
 * To generate the run configurations, run the `idea` gradle task.
 * To generate attachable sources, run the `genSources` task and attach the generated sources in your IDE.
