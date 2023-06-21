@@ -1,11 +1,13 @@
+<img src="https://img.shields.io/static/v1?message=Public Archive&logo=&label=&color=db0000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="public archive"  />
 <img valign="middle" src="https://img.shields.io/badge/Current Version-2.1-red.svg">
 <img valign="middle" src="https://img.shields.io/badge/Client Made For-Personal Use-brightgreen.svg">
 
-# Asylum Client
-Epic Client Built Upon a Base 
+# reDACTED Client
+Epic Forge Client Built Upon M.O.O Base. This repository has been archived.
+I made this Client back in 2021 for personal use and has now been transferred from my old Github account to my current account.
 
 ## How To Download
-Put the Asylum.jar in your mods folder and run 1.12.2 Forge.
+Put the reDACTED.jar in your mods folder and run 1.12.2 Forge.
 
 ## Troubleshooting
 If you encounter a bug please head over to the issues tab.
@@ -16,7 +18,6 @@ Please open only 1 issue per bug.
 
 Please head over to the issues tab.
 open a issue with the label 'Feature-Request'. 
-
 
 
 </details>
